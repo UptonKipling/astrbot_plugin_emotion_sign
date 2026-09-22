@@ -1,0 +1,71 @@
+{
+  "enable": {
+    "description": "启用插件",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后不再自动将回复替换为举牌图片"
+  },
+  "generate_probability": {
+    "description": "生成图片的概率",
+    "type": "float",
+    "default": 0.3,
+    "hint": "取值 0.0-1.0，例如 0.3 表示 30% 概率将短回复替换为举牌图片"
+  },
+  "image_provider": {
+    "description": "图片生成方式",
+    "type": "string",
+    "default": "pillow",
+    "options": [
+      "pillow",
+      "api"
+    ],
+    "hint": "pillow=本地 Pillow 渲染（默认）；api=调用外部图片生成 API"
+  },
+  "api_url": {
+    "description": "外部图片生成 API 地址",
+    "type": "string",
+    "default": "",
+    "hint": "仅 image_provider 为 api 时生效，留空则自动回退到本地渲染"
+  },
+  "api_key": {
+    "description": "外部 API 密钥",
+    "type": "string",
+    "default": "",
+    "secret": true
+  },
+  "font_path": {
+    "description": "自定义字体文件路径",
+    "type": "string",
+    "default": "",
+    "hint": "留空则自动搜索系统常见中文字体（插件 fonts 目录优先）"
+  },
+  "max_text_length": {
+    "description": "触发生成的最大文本长度",
+    "type": "int",
+    "default": 15,
+    "hint": "超过该长度的回复不会被替换为图片"
+  },
+  "upscale": {
+    "description": "图片放大倍数",
+    "type": "int",
+    "default": 2,
+    "hint": "取值 1-4，数值越大图片越清晰但生成越慢、文件越大"
+  },
+  "debug": {
+    "description": "调试模式",
+    "type": "bool",
+    "default": false
+  },
+  "cleanup_enable": {
+    "description": "自动清理渲染图片",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后每天检查一次 data 目录，自动删除过期渲染产物"
+  },
+  "cleanup_days": {
+    "description": "渲染图片保留天数",
+    "type": "int",
+    "default": 7,
+    "hint": "data 目录中生成时间超过该天数的渲染图片将被自动删除"
+  }
+}

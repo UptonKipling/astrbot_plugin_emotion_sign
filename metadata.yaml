@@ -1,0 +1,5 @@
+name: astrbot_plugin_emotion_sign
+author: UptonKipling
+desc: 情感举牌插件 - LLM回复时根据情感生成举牌图片，将文字写在素描本上
+version: "1.1.0"
+short_desc: LLM回复时根据情感生成举牌图片

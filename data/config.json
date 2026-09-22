@@ -1,0 +1,11 @@
+{
+  "generate_probability": 0.3,
+  "image_provider": "pillow",
+  "api_url": "https://vg.v1api.cc/v1",
+  "api_key": "sk-gfwn69zId2Tezwg3pMHaQob7M3r7Z1qFyT42i1hmBJenoUbV",
+  "font_path": "C:\\Users\\21340\\Desktop\\bot\\AstrBotLauncher-0.3.0\\AstrBot\\data\\plugins\\astrbot_plugin_emotion_sign\\fonts\\handwriting.ttf",
+  "max_text_length": 15,
+  "enable": true,
+  "debug": false,
+  "upscale": 4
+}
